@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid rgb(87, 87, 87);
+  overflow-y: scroll;
+}
+nav header{
+  position: sticky;
+  top:0;
+  white-space: pre-wrap;
+  background-color: white;
+}
+
+header{
+  font-size: 32px;
+  padding: 1rem
+}
+nav a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 18px;
+  padding: 1rem 0.75rem;
+  border-top: 1px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+nav a:hover{
+  color: white;
+  background-color: rgb(87, 87, 87);
+}
+
+main{
+  margin-left: 300px;
+  padding: 1rem 2rem;
+}
+
+.main-section article{
+  padding-left: 2rem;
+}
+
+article code {
+  display: block;
+  width: 80%;
+  /* padding: 1rem; */
+  background-color: rgb(235, 235, 235);
+  white-space:pre-line;
+  line-height: 25px;
+}
+
+@media screen and (max-width:800px) {
+
+  /* body{
+    display: flex;
+    flex-direction: column;
+    color: red
+  } */
+
+  nav{
+    all: revert;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 250px;
+    border-bottom: 2px solid rgb(87, 87, 87);
+    overflow-y: scroll;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    padding: 0.75rem;
+    border-top: 1px solid black;
+    transition: all 0.4s ease-in-out;
+  }
+
+  main{
+    all:revert;
+    margin-left: 0;
+    margin-top: 250px;
+    padding: 1rem;
+  }
+
+  header{
+    font-size: 28px;
+    padding: .8rem
+  }
+}
